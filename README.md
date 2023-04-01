@@ -1,4 +1,4 @@
-# (Week 10) - 63070160
+# (Week 10) - 63070160 Veerawat Kamolchet
 
 ## Video
 [Google Drive](https://drive.google.com/file/d/182wGO-EHt8wKv-A5cbTlj4VQAumk5gQW/view?usp=share_link)
@@ -77,9 +77,11 @@ nano install_Jenkins.sh
 sudo apt-get update -y
 sudo apt-get install openjdk-11-jdk -y
 
-# Add Jenkins repository and key
-wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
-sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+# Update Debian compatible operating systems (Fix "Package 'jenkins' has no installation candidate")
+curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+# Set up Debian compatible operating systems
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 
 # Update package lists again and install Jenkins
 sudo apt-get update -y
