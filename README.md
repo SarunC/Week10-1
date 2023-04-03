@@ -1,8 +1,9 @@
 # (Week 10) - 63070160 Veerawat Kamolchet
 
 ## Video
-[Google Drive](https://drive.google.com/file/d/182wGO-EHt8wKv-A5cbTlj4VQAumk5gQW/view?usp=share_link)
+[Image_Processing](https://drive.google.com/file/d/1EURyNk_-X0C9ex0oMoXuRsB9lnAA2xS_/view?usp=share_link)
 
+[Jenkins_Dockercompose](https://drive.google.com/file/d/182wGO-EHt8wKv-A5cbTlj4VQAumk5gQW/view?usp=share_link)
 
 # Install jenkins, docker, docker-compose, and git 
 
