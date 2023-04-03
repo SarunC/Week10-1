@@ -18,7 +18,7 @@ services:
     ports:
       - "8081:8081"
     environment:
-      - APP_COLOR=building.jpg
+      - APP_IMAGE=building.jpg
     networks:
       - front-tier
       - back-tier
